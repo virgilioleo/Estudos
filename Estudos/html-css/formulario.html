@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formularios</title>
+</head>
+<body>
+    <div>
+        <h1>cadastro de devs</h1>
+        <p>complete as informações</p>
+        <br>
+    </div>
+
+    <form>
+        <fieldset>
+            <div>
+                <label>Nome</label>
+                <input type="text" name="nome" id="nome">
+            </div>
+            <div>
+                <label>Sobrenome</label>
+                <input type="text" sobrenome="sobrenome" id="sobrenome">
+            </div>
+                <div>
+                    <label>email</label>
+                    <input type="email" name="email" id="email">
+                </div>
+                <div>
+                    <label>De qual lado você desenvolve?</label>
+                    <input type="radio" name="dev" value="frontend"> Front-end
+                    <input type="radio" name="dev" value="backend"> Back-end
+                    <input type="radio" name="dev" value="fullstack" checked> Full-stack
+                </div>
+                <div>
+                    <label>Senioridade</label>
+                    <select id="senioridade">
+                        <option selected disable value=""></option>
+                        <option>01</option>
+                        <option>02</option>
+                        <option>03</option>
+                    </select>
+                </div>
+        </fieldset>
+
+    </form>
+</body>
+</html>

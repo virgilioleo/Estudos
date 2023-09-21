@@ -109,6 +109,7 @@ class lutador {
     public function setDerrotas($derrotas){
         $this->derrotas = $derrotas;
     }
+    
 }
 
 

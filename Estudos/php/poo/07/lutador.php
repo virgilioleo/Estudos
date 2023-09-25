@@ -11,11 +11,19 @@ class lutador {
     
     //metod
     public function apresentar(){
-
+        echo "<p>----------------------</p>";
+        echo "Chegou a hora! O lutador " . $this->getNome();
+        echo "Vindo de " . $this->getNacionalidade();
+        echo "com " . $this->getIdade() . "anos e pesando " . $this->getPeso() . "KG";
+        echo "<br> " . $this->getVitorias() . "vitorias";
+        echo $this->getDerrotas() . "derrotas e " . $this->getEmpates() . "empates";
     }
     public function status(){
-
-    }
+        echo "<p>----------------------</p>";
+        echo "<p>" . $this->getNome() . "é um peso" . $this->getCategoria();
+        echo "e já ganhou " . $this->getVitorias() . "perdeu " . $this->getDerrotas();
+        echo "e empatou " . $this->getEmpates() . "vezes";
+        }
     public function ganharLuta(){
         $this->setVitorias($this->getVitorias() + 1);
     }

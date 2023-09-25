@@ -17,13 +17,13 @@ class lutador {
 
     }
     public function ganharLuta(){
-
+        $this->setVitorias($this->getVitorias() + 1);
     }
     public function perderLuta(){
-
+        $this->setDerrotas($this->getDerrotas() + 1);
     }
     public function empatarLuta(){
-
+        $this->setEmpates($this->getEmpates() +1);
     }
     //metod especiais
     function __construct($no, $nac, $id, $alt, $pe, $vit, $der, $emp)

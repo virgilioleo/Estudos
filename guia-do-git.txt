@@ -11,3 +11,6 @@ Commita as alteracoes com uma mensagem que voce escrever.
 
 git push origin main
 Manda seu commit para o github online.
+
+git log --oneline
+Exibe os comites feitos.

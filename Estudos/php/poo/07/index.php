@@ -7,8 +7,11 @@
 </head>
 <body>
     <?php 
-    
-    
+        require_once 'lutador.php';
+        $l = new lutador ("Pretty Boy", "França", 31, 1.75, 68.9, 11, 2, 1);
+        $l->status();
+        $l->apresentar();
+        $l->ganharLuta();
     ?>
 </body>
 </html>

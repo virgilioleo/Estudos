@@ -9,6 +9,19 @@ class lutador {
     private $categoria;
     private $vitorias, $derrotas, $empates; //varios por linha
     
+    //metod especiais
+    function __construct($no, $nac, $id, $alt, $pe, $vit, $der, $emp)
+    {
+        $this->nome = $no;
+        $this->nacionalidade = $nac;
+        $this->idade = $id;
+        $this->altura = $alt;
+        $this->peso = $pe;
+        $this->vitorias = $vit;
+        $this->derrotas = $der;
+        $this->empates = $emp;
+    }
+
     //metod
     public function apresentar(){
         echo "<p>----------------------</p>";
@@ -32,18 +45,6 @@ class lutador {
     }
     public function empatarLuta(){
         $this->setEmpates($this->getEmpates() +1);
-    }
-    //metod especiais
-    function __construct($no, $nac, $id, $alt, $pe, $vit, $der, $emp)
-    {
-        $this->nome = $no;
-        $this->nacionalidade = $nac;
-        $this->idade = $id;
-        $this->altura = $alt;
-        $this->peso = $pe;
-        $this->vitorias = $vit;
-        $this->derrotas = $der;
-        $this->empates = $emp;
     }
     
     function getNome() {

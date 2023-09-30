@@ -1,0 +1,13 @@
+# Comandos do GIT
+
+git status
+Exibe as alteracoes.
+
+git add .
+Adiciona todas as alteracoes para serem comitadas.
+
+git commit -m "Aqui voce escreve a mensagem do commit"
+Commita as alteracoes com uma mensagem que voce escrever.
+
+git push origin main
+Manda seu commit para o github online.

@@ -10,7 +10,7 @@ class lutador {
     private $vitorias, $derrotas, $empates; //varios por linha
     
     //metod especiais
-    function __construct($no, $nac, $id, $alt, $pe, $vit, $der, $emp)
+    function __construct($no, $nac, $id, $alt, $pe, $vit, $der, $emp=1)
     {
         $this->nome = $no;
         $this->nacionalidade = $nac;

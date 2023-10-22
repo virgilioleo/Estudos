@@ -40,7 +40,7 @@
             <?php
             foreach ($clientes as $item) {
                 echo '<tr>
-                     <td>' . $item . '</td>
+                     <td>' . $item['nome'] . '</td>
                  </tr>';
             }
             ?>

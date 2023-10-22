@@ -7,11 +7,14 @@ class ClienteService
     public function buscarClientes() 
     {
         $clientes = [
-            'Arnaldo',
-            'Scorpion',
-            'Maria',
-            'Anna',
-            'Jose',
+            [
+                'nome'  => 'Arnaldo',
+                'email' => 'arnaldo@gmail.com'
+            ],
+            [
+                'nome'  => 'Scorpion',
+                'email' => 'scorpion@gmail.com'
+            ],
         ];
         return $clientes;
     }

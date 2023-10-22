@@ -21,3 +21,4 @@ Route::post('/produtos','ProdutoController@store');
 
 Route::get('/produtos','ProdutoController@index');
 
+Route::get('/viewpdf','PdfviewController@index');

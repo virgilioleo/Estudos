@@ -30,4 +30,14 @@ class ClienteController extends Controller
         return redirect('/clientes');
     }
 
+    public function buscar()
+    {  
+        $clientes = cliente::all()->toArray();
+        return response()->json([
+            'data' => $clientes,
+            'recordsTotal' => count($clientes),
+            'recordsFiltered' => count($clientes),
+        ]);
+    }
+
 }

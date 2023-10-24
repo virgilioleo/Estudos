@@ -8,7 +8,7 @@ use Barryvdh\DomPDF\Facade as PDF;
 use Barryvdh\DomPDF\Facade\Pdf as FacadePdf;
 use Illuminate\Support\Facades\Facade;
 
-class PdfviewController extends Controller
+class PDFController extends Controller
 {
 
     private $model;
@@ -17,10 +17,10 @@ class PdfviewController extends Controller
         $this->model = $model;
     }
 
-    public function index()
+    public function gerarpdf()
     {
         $data['model'] = $this->model->all();
-        return FacadePdf::loadView('view', $data)
+        return FacadePdf::loadView('pdf', $data)
             ->stream();
     }
 }

@@ -7,14 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Laravel</title>
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css"> -->
     <!-- Styles -->
     <style>
         html,
         body {
             background-color: #fff;
             color: #636b6f;
-            font-family: 'Raleway', sans-serif;
+            /* font-family: 'Raleway', sans-serif; */
             font-weight: 100;
             height: 100vh;
             margin: 0;
@@ -74,12 +74,12 @@
                 </tr>
             </thead>
             <tbody>
-                @foreach($model as $item)
-                <tr>
-                    <td>{{$item->id}}</td>
-                    <td>{{$item->description}}</td>
-                </tr>
-                @endforeach
+                <?php
+                foreach ($model as $item)
+                    echo '<tr>
+                <td>' . $item['nome'] . '</td>
+               </tr>';
+                ?>
             </tbody>
         </table>
     </div>

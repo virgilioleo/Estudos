@@ -15,10 +15,12 @@ Route::get('/','WelcomeController@index');
 
 Route::get('/clientes','ClienteController@index');
 
+Route::get('/clientes/buscar','ClienteController@buscar');
+
 Route::post('/clientes','ClienteController@store');
+
+Route::get('/clientes/pdf','PDFController@gerarpdf')->name('clientes.pdf');
 
 Route::post('/produtos','ProdutoController@store');
 
 Route::get('/produtos','ProdutoController@index');
-
-Route::get('/viewpdf','PdfviewController@index');

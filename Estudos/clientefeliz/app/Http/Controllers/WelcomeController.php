@@ -6,9 +6,10 @@ use Illuminate\Http\Request;
 
 class WelcomeController extends Controller
 {
-    public function store() 
+    public function index() 
     {
         $dados = [];
         return view('welcome', compact('dados'));
     }
+    
 }
